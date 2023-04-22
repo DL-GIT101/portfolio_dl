@@ -38,3 +38,9 @@ nav > ul li::marker {
     font-weight: bold;
     font-size: larger;
 }
+
+#about_me {
+    background-color: rgb(37, 92, 37);
+    margin-top: 75px;
+    height: 500px;
+}

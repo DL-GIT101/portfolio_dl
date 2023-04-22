@@ -21,3 +21,6 @@ This is where my projects will be displayed
 - https://dl-git101.github.io/Calculator-TOP/
 
     Project from TOP where logic is more of the focus here
+
+
+ - Heavily inspired by Britany Chiang - https://brittanychiang.com/
