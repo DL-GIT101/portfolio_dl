@@ -24,3 +24,7 @@ This is where my projects will be displayed
 
 
  - Heavily inspired by Britany Chiang - https://brittanychiang.com/
+
+
+ logo used 
+  - <a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik - Flaticon</a>

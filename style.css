@@ -52,16 +52,49 @@ a:hover {
 #about_me {
     color: rgb(238, 222, 197);
     margin-top: 75px;
-    height: 500px;
+    height: 300px;
     padding: 50px 100px;
 }
 
 #about_me>#intro {
     font-size: 72px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
 }
 
 #about_me>#about {
     font-size: 24px;
     text-align: justify;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
 }
 
+#intro strong {
+    color: rgb(253, 178, 58);
+}
+
+#about > em {
+    color: rgb(253, 215, 154);
+}
+
+#stacks {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+}
+
+.tech {
+    display: flex;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(253, 215, 154);
+}
+
+#stacks > .tech {
+    margin: 0px 40px;
+}
+
+#stacks > .tech img {
+    width: 24px;
+    margin-right: 10px;
+}
