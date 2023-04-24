@@ -141,16 +141,16 @@ nav > p a:hover,nav > ul li a:hover {
 
 #contacts {
     background-color:rgb(180, 127, 40);
-    height: 200px;
+    height: 175px;
     color: rgb(1, 87, 35);
-    padding: 50px 200px;
+    padding: 50px 200px 0px;
 }
 
 #contacts > .container {
     display: flex;
     justify-content: center;
     justify-content: space-between;
-    padding:0px 250px;
+    padding:0px 200px;
 }
 
 .contact {
@@ -167,5 +167,15 @@ nav > p a:hover,nav > ul li a:hover {
 .contact > .name a {
     text-decoration: none;
     color: rgb(238, 222, 197);
+}
+
+#footer {
+    background-color:rgb(238, 222, 197);
+    color: rgb(0, 51, 20);
+    height: 32px;
+    font-family: 'Bruno Ace SC', cursive;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
 }
 
