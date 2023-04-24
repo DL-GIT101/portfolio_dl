@@ -4,7 +4,14 @@
 }
 body {
     background-color: rgb(0, 51, 20);
-    margin: 20px 200px 0px;
+    margin: 20px 0px;
+    color: rgb(238, 222, 197);
+    display: flex;
+    flex-direction: column;
+}
+
+nav,#about_me{
+    margin: 0px 200px;
 }
 
 nav {
@@ -45,7 +52,7 @@ nav > ul li::marker {
     font-size: larger;
 }
 
-a:hover {
+nav > p a:hover,nav > ul li a:hover {
     text-shadow: 0 0 5px rgb(238, 222, 197);
 }
 
@@ -87,14 +94,47 @@ a:hover {
     display: flex;
     align-items: center;
     font-family: 'Press Start 2P', cursive;
-    color: rgb(253, 215, 154);
-}
-
-#stacks > .tech {
+    font-size: 12px;
     margin: 0px 40px;
 }
 
 #stacks > .tech img {
-    width: 24px;
+    width: 16px;
     margin-right: 10px;
+}
+
+#projects {
+    background-color: rgb(6, 44, 22);
+    padding: 50px 200px;
+    color: rgb(238, 222, 197);
+}
+
+#projects > #container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 1100px;
+}
+
+#projects > .title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.project > .name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.project > .name a{
+    text-decoration: none;
+    color: rgb(250, 186, 83);
+}
+
+.project > img {
+    height: 250px;
 }
