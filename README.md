@@ -27,4 +27,4 @@ This is where my projects will be displayed
 
 
  logo used 
-  - from flaticon.com
+  - <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a>
