@@ -23,8 +23,13 @@ This is where my projects will be displayed
     Project from TOP where logic is more of the focus here
 
 
- - Heavily inspired by Britany Chiang - https://brittanychiang.com/
+ - Inspired by Britany Chiang - https://dunks1980.com/
 
+ Contact 
 
- logo used 
-  - <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a>
+  - Github - https://github.com/DL-GIT101
+  - Gmail - pastor.donlhenard@gmail.com
+  - Linkedin - https://www.linkedin.com/in/don-lhenard-pastor-540881212
+
+SVGs are from https://www.svgrepo.com/
+
