@@ -4,6 +4,7 @@
 
 body {
     background-color: rgb(34, 34, 34);
+    color: rgb(240, 240, 240);
 }
 
 main {
@@ -21,6 +22,8 @@ container {
     border-right: 1px solid rgb(240, 240, 240);
     border-top: 1px solid rgb(240, 240, 240);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -78,3 +81,35 @@ header svg#linkedin:hover path {
 header svg#logo:hover path {
     fill: rgb(45, 194, 55);
 }
+
+content {
+    flex-grow: 1;
+    display: flex;
+}
+
+section{
+    flex-grow: 1;
+}
+
+nav {
+    height: auto;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+nav ul {
+    list-style-type: circle;
+}
+
+nav ul li {
+    padding-bottom: 1rem;
+    transition: opacity 0.3s ease;
+}
+
+nav ul li:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
