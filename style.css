@@ -87,10 +87,6 @@ content {
     display: flex;
 }
 
-section{
-    flex-grow: 1;
-}
-
 nav {
     height: auto;
     width: 30%;
@@ -113,3 +109,37 @@ nav ul li:hover {
     cursor: pointer;
 }
 
+section {
+    flex-grow: 1;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+article {
+    padding: 2rem;
+    height: 75%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    transition:  opacity 0.3s ease;
+    max-height: 0;
+    max-width: 0;
+    opacity: 0;
+}
+
+article.show {
+    opacity: 1;
+    max-height: 75%;
+    max-width: 75%;
+}
+
+article h1{
+    padding-bottom: 2rem;
+}
+
+article p{
+    padding-bottom: 2rem;
+}
