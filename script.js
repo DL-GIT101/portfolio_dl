@@ -13,3 +13,7 @@ navList.forEach(list => {
 navList[0].addEventListener('click', () => {
     articles[0].className = "show";
 });
+
+navList[1].addEventListener('click', () => {
+    
+});

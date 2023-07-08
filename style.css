@@ -95,18 +95,27 @@ nav {
     font-size: 1.2rem;
 }
 
-nav ul {
+nav > ul {
     list-style-type: circle;
 }
 
-nav ul li {
+nav > ul > li {
     padding-bottom: 1rem;
     transition: opacity 0.3s ease;
 }
 
-nav ul li:hover {
+nav > ul > li:hover {
     opacity: 0.5;
     cursor: pointer;
+}
+
+nav > ul > #projects > ul {
+    padding: 1rem ;
+    list-style-type: disc;
+}
+
+nav > ul > #projects > ul > li {
+    padding-bottom: 1rem ;
 }
 
 section {
