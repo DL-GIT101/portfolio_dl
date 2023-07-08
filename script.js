@@ -1,19 +1,22 @@
 const articles = document.querySelectorAll('article');
-const navList = document.querySelectorAll('nav ul li');
 
-navList.forEach(list => {
-    list.addEventListener('click', () => {
-        navList.forEach(nav => {
-            nav.style.opacity = "1";
-        });
-        list.style.opacity = "0.5";
-    });
-});
+const aboutList = document.querySelector('nav > ul > li.about');
+const aboutListP = document.querySelector('nav > ul > li.about > p');
 
-navList[0].addEventListener('click', () => {
+const projectList = document.querySelector('nav > ul > li.projects');
+const projectListP = document.querySelector('nav > ul > li.projects > p');
+
+const topList = document.querySelector('nav > ul > li.projects > ul');
+
+aboutList.addEventListener('click', () => {
+    aboutListP.style.opacity = "0.5";
+    projectListP.removeAttribute('style');
     articles[0].className = "show";
 });
 
-navList[1].addEventListener('click', () => {
-    
+projectList.addEventListener('click', () => {
+    projectListP.style.opacity = "0.5";
+    topList.classList.add('show');
+    aboutListP.removeAttribute('style');
 });
+

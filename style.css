@@ -99,22 +99,28 @@ nav > ul {
     list-style-type: circle;
 }
 
-nav > ul > li {
+nav > ul > li > p {
     padding-bottom: 1rem;
     transition: opacity 0.3s ease;
 }
 
-nav > ul > li:hover {
+nav > ul > li > p:hover {
     opacity: 0.5;
     cursor: pointer;
 }
 
-nav > ul > #projects > ul {
+nav > ul > .projects > ul {
     padding: 1rem ;
     list-style-type: disc;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-nav > ul > #projects > ul > li {
+nav > ul > .projects > ul.show {
+    opacity: 1;
+}
+
+nav > ul > .projects > ul > li {
     padding-bottom: 1rem ;
 }
 
@@ -133,7 +139,7 @@ article {
     width: 75%;
     display: flex;
     flex-direction: column;
-    transition:  opacity 0.3s ease;
+    transition:  opacity 1s ease;
     max-height: 0;
     max-width: 0;
     opacity: 0;
