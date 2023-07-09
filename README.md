@@ -22,6 +22,10 @@ This is where my projects will be displayed
 
     Project from TOP where logic is more of the focus here
 
+- http://bplo-permit.infinityfreeapp.com/
+- https://github.com/DL-GIT101/busReg_capstone
+
+    Our capstone project
 
  - Inspired by Britany Chiang - https://dunks1980.com/
 
