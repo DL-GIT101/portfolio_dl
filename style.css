@@ -93,7 +93,6 @@ nav {
     display: flex;
     align-items: center;
     font-size: 1.2rem;
-    border-left: 1px solid rgb(240, 240, 240);
     border-radius: 10px;
 }
 
@@ -149,18 +148,40 @@ article {
     width: 75%;
     padding: 2rem;
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: opacity 1s ease;
 }
 
 article.show {
     opacity: 1;
 }
 
-article h1{
+article > *{
     padding-bottom: 2rem;
 }
 
-article p{
-    padding-bottom: 2rem;
+div.links a {
+    padding-right: 1rem;
+    color: rgb(54, 139, 60);
+    text-decoration: none;
+    transition: text-decoration-color 1s ease;
 }
 
+div.links a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(45, 194, 55);
+}
+
+div.languages {
+    display: flex;
+    
+}
+
+div.languages > *{
+   padding-right: 1rem;
+}
+
+
+div.languages svg {
+    height: 2rem;
+    width: 2rem;
+}
