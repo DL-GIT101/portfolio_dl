@@ -1,13 +1,19 @@
 const articles = document.querySelectorAll('article');
 
-const about = document.querySelector('nav > ul > li.about');
-const aboutP = document.querySelector('nav > ul > li.about > p');
+const about = document.querySelector('nav.bottom-nav > ul > li.about');
+const aboutP = document.querySelector('nav.bottom-nav > ul > li.about > p');
 
-const project = document.querySelector('nav > ul > li.projects');
-const projectP = document.querySelector('nav > ul > li.projects > p');
+const project = document.querySelector('nav.bottom-nav > ul > li.projects');
+const projectP = document.querySelector('nav.bottom-nav > ul > li.projects > p');
 
-const projects = document.querySelector('nav > ul > li.projects > ul');
-console.log(articles);
+const projects = document.querySelector('nav.bottom-nav > ul > li.projects > ul');
+
+setTimeout(() => {
+    aboutP.style.opacity = "0.5";
+    articles[0].classList.add('show');
+    articles[0].style.zIndex = "2";
+}, 500);
+
 about.addEventListener('click', () => {
     aboutP.style.opacity = "0.5";
     projectP.removeAttribute('style');
@@ -47,4 +53,28 @@ projectsList.forEach((project, i) => {
         articles[i+1].style.zIndex = "2";
     });
    
+});
+
+const dotNav = document.querySelectorAll('nav.top-nav > ul > li');
+
+setTimeout(() => {
+    dotNav[0].style.opacity = "0.5";
+    articles[0].classList.add('show');
+    articles[0].style.zIndex = "2";
+}, 500);
+
+dotNav.forEach((dot, i) => {
+    dot.addEventListener('click', () =>{
+        dotNav.forEach(dot => {
+            dot.removeAttribute('style');
+        });
+        dot.style.opacity = "0.5";
+        articles.forEach(article => {
+            article.classList.remove('show');
+            article.removeAttribute('style');
+            article.style.zIndex = "1";
+        });
+        articles[i].classList.add('show');
+        articles[i].style.zIndex = "2";
+    });
 });
