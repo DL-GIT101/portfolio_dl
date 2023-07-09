@@ -1,22 +1,44 @@
 const articles = document.querySelectorAll('article');
 
-const aboutList = document.querySelector('nav > ul > li.about');
-const aboutListP = document.querySelector('nav > ul > li.about > p');
+const about = document.querySelector('nav > ul > li.about');
+const aboutP = document.querySelector('nav > ul > li.about > p');
 
-const projectList = document.querySelector('nav > ul > li.projects');
-const projectListP = document.querySelector('nav > ul > li.projects > p');
+const project = document.querySelector('nav > ul > li.projects');
+const projectP = document.querySelector('nav > ul > li.projects > p');
 
-const topList = document.querySelector('nav > ul > li.projects > ul');
-
-aboutList.addEventListener('click', () => {
-    aboutListP.style.opacity = "0.5";
-    projectListP.removeAttribute('style');
-    articles[0].className = "show";
+const projects = document.querySelector('nav > ul > li.projects > ul');
+console.log(articles);
+about.addEventListener('click', () => {
+    aboutP.style.opacity = "0.5";
+    projectP.removeAttribute('style');
+    projects.classList.remove('show');
+    projectsList.forEach(list => {
+        list.removeAttribute('style');
+    });
+    articles.forEach(article => {
+        article.classList.remove('show');
+    });
+    articles[0].classList.add('show');
 });
 
-projectList.addEventListener('click', () => {
-    projectListP.style.opacity = "0.5";
-    topList.classList.add('show');
-    aboutListP.removeAttribute('style');
+project.addEventListener('click', () => {
+    projectP.style.opacity = "0.5";
+    projects.classList.add('show');
+    aboutP.removeAttribute('style');
 });
 
+const projectsList = document.querySelectorAll('nav > ul > li.projects > ul > li');
+
+projectsList.forEach((project, i) => {
+    project.addEventListener('click', () => {
+        projectsList.forEach(list => {
+            list.removeAttribute('style');
+        });
+        project.style.opacity = "0.5";
+        articles.forEach(article => {
+            article.classList.remove('show');
+        });
+        articles[i+1].classList.add('show');
+    });
+   
+});
