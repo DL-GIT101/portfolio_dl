@@ -87,7 +87,7 @@ content {
     display: flex;
 }
 
-nav {
+nav.bottom-nav {
     height: auto;
     width: 30%;
     display: flex;
@@ -96,45 +96,48 @@ nav {
     border-radius: 10px;
 }
 
-nav > ul {
+nav.bottom-nav > ul {
     list-style-type: circle;
 }
 
-nav > ul > li > p {
+nav.bottom-nav > ul > li > p {
     padding-bottom: 1rem;
     transition: opacity 0.3s ease;
 }
 
-nav > ul > li > p:hover {
+nav.bottom-nav > ul > li > p:hover {
     opacity: 0.5;
     cursor: pointer;
 }
 
-nav > ul > .projects > ul {
+nav.bottom-nav > ul > .projects > ul {
     padding: 1rem ;
     list-style-type: disc;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
-nav > ul > .projects > ul.show {
+nav.bottom-nav > ul > .projects > ul.show {
     opacity: 1;
 }
 
-nav > ul > .projects > ul > li {
+nav.bottom-nav > ul > .projects > ul > li {
     padding-bottom: 1rem ;
     transition: opacity 0.3s ease;
 }
 
-nav > ul > .projects > ul > li:hover {
+nav.bottom-nav > ul > .projects > ul > li:hover {
     opacity: 0.5;
     cursor: pointer;
+}
+
+nav.top-nav {
+    display: none;
 }
 
 section {
     position: relative;
     flex-grow: 1;
-    max-width: 1000px;
     font-size: 1.2rem;
 }
 
@@ -184,4 +187,55 @@ div.languages > *{
 div.languages svg {
     height: 2rem;
     width: 2rem;
+}
+
+@media only screen and (max-width: 768px){
+
+    main {
+        height: auto;
+        font-size: 12px;
+    }
+
+    container {
+        border: none;
+        height: 100vh;
+    }
+
+    content {
+        flex-direction: column;
+    }
+
+    nav.bottom-nav {
+        display: none;
+    }
+
+    nav.top-nav {
+        display: block;
+    }
+
+    nav.top-nav svg{
+        height: 1rem;
+        width:  1rem;
+        fill: rgb(240, 240, 240);
+    }
+
+    nav.top-nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+
+    nav.top-nav ul li{
+        transition: opacity 0.3s ease;
+    }
+
+    div.languages {
+        flex-direction: column;
+    }
+
+    div.languages > * {
+        padding-bottom: 1rem;
+    }
+    
 }
