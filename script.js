@@ -17,8 +17,11 @@ about.addEventListener('click', () => {
     });
     articles.forEach(article => {
         article.classList.remove('show');
+        article.removeAttribute('style');
+        article.style.zIndex = "1";
     });
     articles[0].classList.add('show');
+    articles[0].style.zIndex = "2";
 });
 
 project.addEventListener('click', () => {
@@ -37,8 +40,11 @@ projectsList.forEach((project, i) => {
         project.style.opacity = "0.5";
         articles.forEach(article => {
             article.classList.remove('show');
+            article.removeAttribute('style');
+            article.style.zIndex = "1";
         });
         articles[i+1].classList.add('show');
+        articles[i+1].style.zIndex = "2";
     });
    
 });
